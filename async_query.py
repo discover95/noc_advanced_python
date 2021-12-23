@@ -20,7 +20,7 @@ def count_hash(urls):
     return md5(s).hexdigest()
 
 # print(count_hash(["https://nocvko-python.mocklab.io/delayed/2", "https://nocvko-python.mocklab.io/delayed/1"]))
-print(count_hash(["https://mail.ru", "https://habr.com"]))
+# print(count_hash(["https://mail.ru", "https://habr.com"]))
 
 
 def run(url):
@@ -60,7 +60,7 @@ def sync_count_hash(urls):
 
 async def main():
     print("Request")
-    async with aiohttp.request('GET', "https://nocvko-python.mocklab.io/delayed/2") as response:
+    async with aiohttp.request('GET', "https://habr.comm") as response:
         print("status:", response.status)
 
-# asyncio.run(main())
+asyncio.run(main())
